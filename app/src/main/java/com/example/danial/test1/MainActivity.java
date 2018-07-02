@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.buttonLogin).setOnClickListener(this);
         if(AccessToken.getCurrentAccessToken() != null)
         {
+            //this is test
 
             txtEmail.setText(AccessToken.getCurrentAccessToken().getUserId());
             txtId.setText((AccessToken.getCurrentAccessToken().getUserId()));
